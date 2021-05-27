@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+	<meta charset="utf-8" />
+		<link rel="stylesheet" href="/static/app.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="/">웹프로그래밍</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			
+				<div class="collapse navbar-collapse" id="navbar">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="/">HOME</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/join">회원가입</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="/intro">자기소개</a>
+						</li>
+            <li class="nav-item">
+							<a class="nav-link" href="/guestBook">방명록</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav">
+{% if user_name %}
+						<li class="nav-item">
+							<a class="nav-link active">{{ user_name }}</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/logout">로그아웃</a>
+						</li>
+{% else %}
+						<li class="nav-item">
+							<a class="nav-link" href="/login">로그인</a>
+						</li>
+{% endif %}
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+    {% if user_name %}
+      <div class="Intro">
+        <div class="Intro-MainImgWrap">
+          <img class="Intro-MainImgWrap-Img" src="../static/profile.jpg" />
+        </div>
+        <div class="Intro-Title">
+          손민재
+        </div>
+        <div class="Intro-SubTitle">
+          Front-End-Dev In DGSW, Team B1ND
+        </div>
+        <div class="Intro-Content">
+          대구 소프트웨어 고등학교 2학년 2반 9번 손민재입니다.
+          웹 Front-End 분야를 공부하고 있으며 교내 동아리 B1ND의 웹팀 팀장을 맡고 있습니다.
+          편리함을 추구하는 개발자가 되기위해 노력하고 있습니다.
+        </div>
+        <div class="Intro-IconWrap">
+          <a class="Intro-Icons" href="https://github.com/Clzzi" target="_blank" ><img class="Intro-Icon" src="../static/github.svg"/></a>
+          <a class="Intro-Icons" href="https://velog.io/@jce1407" target="_blank" ><img class="Intro-Icon" src="../static/velog.jpg"/></a>
+        </div>
+        <hr/>
+        <div class="Intro-StackWrap-Title">STACK</div>
+        <div class="Intro-StacksWrap">
+          <img class="Intro-Stack" src="../static/react.svg" />
+          <img class="Intro-Stack" src="../static/typescript.svg" />
+          <img class="Intro-Stack" src="../static/sass.svg" />
+          <img class="Intro-Stack" src="../static/javascript.svg" />
+          <img class="Intro-Stack" src="../static/htmlcss.svg" />
+        </div>
+      </div>
+
+
+    {% else %}
+        로그인 후 사용해주세요.
+    {% endif %}
+	</body>
+</html>
