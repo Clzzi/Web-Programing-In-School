@@ -31,73 +31,67 @@
 </template>
 
 <script>
-
 </script>
 
 <style scoped lang="scss">
 .Intro {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	justify-content: center;
-	text-align: center;
-	align-items: center;
-	vertical-align: middle;
-}
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
 
-.Intro-MainImgWrap {
-	display: inline-block;
-	margin-bottom: 10px;
-}
+  &-MainImgWrap {
+    display: inline-block;
+    margin-bottom: 10px;
 
-.Intro-MainImgWrap-Img {
-	width: 25%;
-	border-radius: 50%;
-	box-shadow: 1px 1px 5px black;
-}
+    &-Img {
+      width: 25%;
+      border-radius: 50%;
+      box-shadow: 1px 1px 5px black;
+    }
+  }
+  &-Title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  &-SubTitle {
+    font-size: 1.5rem;
+    color: gray;
+    margin-bottom: 15px;
+  }
+  &-Content {
+    font-size: 1rem;
+    color: black;
+    line-height: 20px;
+    word-spacing: 1.5px;
+    margin-bottom: 15px;
+  }
 
-.Intro-Title {
-	font-size: 2rem;
-	font-weight: 600;
-}
+  &-StacksWrap {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    &-Title {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
 
-.Intro-SubTitle {
-	font-size: 1.5rem;
-	color: gray;
-	margin-bottom: 15px;
-}
-
-.Intro-Content {
-	font-size: 1rem;
-	color : black;
-	line-height: 20px;
-	word-spacing: 1.5px;
-	margin-bottom: 15px;
-}
-
-.Intro-StackWrap-Title{
-	font-size: 2rem;
-	font-weight: bold;
-}
-
-.Intro-Icon {
-	width: 100px;
-	height: 100px;
-	margin-right: 15px;
-}
-
-.Intro-StacksWrap {
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	align-items: center;
-	vertical-align: middle;
-}
-
-.Intro-Stack{
-	width: 100px;
-	height: 100px;
-	margin-right: 10px;
+  &-Stack {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+  &-Icon {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+  }
 }
 </style>
