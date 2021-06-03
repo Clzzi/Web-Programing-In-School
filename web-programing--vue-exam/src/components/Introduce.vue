@@ -1,0 +1,103 @@
+<template>
+  <div class="Intro">
+    <div class="Intro-MainImgWrap">
+      <img class="Intro-MainImgWrap-Img" src="../assets/profile.jpg" />
+    </div>
+    <div class="Intro-Title">손민재</div>
+    <div class="Intro-SubTitle">Front-End-Dev In DGSW, Team B1ND</div>
+    <div class="Intro-Content">
+      대구 소프트웨어 고등학교 2학년 2반 9번 손민재입니다. 웹 Front-End 분야를
+      공부하고 있으며 교내 동아리 B1ND의 웹팀 팀장을 맡고 있습니다. 편리함을
+      추구하는 개발자가 되기위해 노력하고 있습니다.
+    </div>
+    <div class="Intro-IconWrap">
+      <a class="Intro-Icons" href="https://github.com/Clzzi" target="_blank"
+        ><img class="Intro-Icon" src="../assets/github.svg"
+      /></a>
+      <a class="Intro-Icons" href="https://velog.io/@jce1407" target="_blank"
+        ><img class="Intro-Icon" src="../assets/velog.jpg"
+      /></a>
+    </div>
+    <hr />
+    <div class="Intro-StackWrap-Title">STACK</div>
+    <div class="Intro-StacksWrap">
+      <img class="Intro-Stack" src="../assets/react.svg" />
+      <img class="Intro-Stack" src="../assets/sass.svg" />
+      <img class="Intro-Stack" src="../assets/typescript.svg" />
+      <img class="Intro-Stack" src="../assets/htmlcss.svg" />
+      <img class="Intro-Stack" src="../assets/javascript.svg" />
+    </div>
+  </div>
+</template>
+
+<script>
+
+</script>
+
+<style scoped lang="scss">
+.Intro {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	vertical-align: middle;
+}
+
+.Intro-MainImgWrap {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.Intro-MainImgWrap-Img {
+	width: 25%;
+	border-radius: 50%;
+	box-shadow: 1px 1px 5px black;
+}
+
+.Intro-Title {
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.Intro-SubTitle {
+	font-size: 1.5rem;
+	color: gray;
+	margin-bottom: 15px;
+}
+
+.Intro-Content {
+	font-size: 1rem;
+	color : black;
+	line-height: 20px;
+	word-spacing: 1.5px;
+	margin-bottom: 15px;
+}
+
+.Intro-StackWrap-Title{
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.Intro-Icon {
+	width: 100px;
+	height: 100px;
+	margin-right: 15px;
+}
+
+.Intro-StacksWrap {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	vertical-align: middle;
+}
+
+.Intro-Stack{
+	width: 100px;
+	height: 100px;
+	margin-right: 10px;
+}
+</style>
