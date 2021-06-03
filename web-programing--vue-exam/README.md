@@ -1,4 +1,4 @@
-# web-programing-vue-exam
+# web-programing--vue-exam
 
 ## Project setup
 ```
