@@ -19,8 +19,8 @@
       /></a>
     </div>
     <hr />
-    <div class="Intro-StackWrap-Title">STACK</div>
-    <div class="Intro-StacksWrap">
+    <div class="Intro-StackTitle">STACK</div>
+    <div class="Intro-StackWrap">
       <img class="Intro-Stack" src="../assets/react.svg" />
       <img class="Intro-Stack" src="../assets/sass.svg" />
       <img class="Intro-Stack" src="../assets/typescript.svg" />
@@ -71,16 +71,18 @@
     margin-bottom: 15px;
   }
 
+  &-StackTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+
   &-StacksWrap {
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     vertical-align: middle;
-    &-Title {
-      font-size: 2rem;
-      font-weight: bold;
-    }
   }
 
   &-Stack {
