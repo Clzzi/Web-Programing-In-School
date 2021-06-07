@@ -1,24 +1,8 @@
-# web-programing--vue-exam
+## 웹 프로그래밍 수행평가
+### VUE를 사용한 TODOLIST 및 INTRODUCE 페이지 만들기
 
-## Project setup
-```
-yarn install
-```
+### 투두리스트(ToDoList)
+![image](https://user-images.githubusercontent.com/62810965/120999172-c7d35c80-c7c3-11eb-955a-2651429fcfaf.png)
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 자기소개 (Introduce)
+![image](https://user-images.githubusercontent.com/62810965/120999332-f6513780-c7c3-11eb-8c83-4859ed5281a7.png)
