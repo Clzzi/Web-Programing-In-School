@@ -63,7 +63,7 @@ export default new Vuex.Store({
       const { visibility } = state;
       if (visibility === "active") {
         return state.todos.filter((todo) => !todo.completed);
-      } else if (visibility === "completed") {
+      } else if (visibility === "done") {
         return state.todos.filter((todo) => todo.completed);
       } else {
         return state.todos;

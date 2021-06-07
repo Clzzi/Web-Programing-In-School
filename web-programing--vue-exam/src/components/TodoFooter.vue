@@ -1,10 +1,10 @@
 <template>
   <div>
-    <button type="button" @click="updateVisibility('all')">All</button>
-    <button type="button" @click="updateVisibility('active')">Active</button>
-    <button type="button" @click="updateVisibility('completed')">
-      Completed
-    </button>
+    <select name="all" @change="onChange(onChange($event))">
+      <option value="all">All</option>
+      <option value="active">Active</option>
+      <option value="done">Done</option>
+    </select>
     <button
       type="button"
       @click="removeCompletedTodo"
@@ -16,16 +16,19 @@
 </template>
 
 <script>
-import { mapActions, mapGetters } from 'vuex'
+import { mapActions, mapGetters } from "vuex";
 export default {
-  name: 'TodoFooter',
+  name: "TodoFooter",
   methods: {
-    ...mapActions(['updateVisibility', 'removeCompletedTodo'])
+    ...mapActions(["updateVisibility", "removeCompletedTodo"]),
+    onChange(e) {
+      this.updateVisibility(e.target.value);
+    },
   },
   computed: {
-    ...mapGetters(['completedCount'])
-  }
-}
+    ...mapGetters(["completedCount"]),
+  },
+};
 </script>
 
 <style></style>
