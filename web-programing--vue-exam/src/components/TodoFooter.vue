@@ -5,11 +5,7 @@
       <option value="active">Active</option>
       <option value="done">Done</option>
     </select>
-    <button
-      type="button"
-      @click="removeCompletedTodo"
-      v-show="completedCount > 0"
-    >
+    <button type="button" @click="removeCompletedTodo" v-show="completedCount">
       Clear completed
     </button>
   </div>

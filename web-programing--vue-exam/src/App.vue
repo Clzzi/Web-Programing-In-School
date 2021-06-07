@@ -2,7 +2,7 @@
   <div class="nav">
     <div class="nav-Logo">Vue Exam</div>
     <div class="nav-Content">
-      <router-link to="/">ToDoList</router-link>
+      <router-link to="/">ToDoList</router-link> | 
       <router-link to="/intro">IntroDuce</router-link>
     </div>
     <router-view />
@@ -10,7 +10,7 @@
 </template>
 
 <style lang="scss">
-.nav {
+/* .nav {
   width: 100vw;
   height: 60px;
   display: flex;
@@ -45,5 +45,5 @@
       }
     }
   }
-}
+} */
 </style>

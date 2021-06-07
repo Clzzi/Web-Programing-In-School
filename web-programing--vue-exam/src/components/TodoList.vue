@@ -16,22 +16,22 @@
 </template>
 
 <script>
-import { mapGetters, mapActions, mapState } from 'vuex'
+import { mapGetters, mapActions, mapState } from "vuex";
 export default {
-  name: 'TodoList',
+  name: "TodoList",
   methods: {
     updateEditTodo(event) {
-      if (event.code === 'Enter') {
-        this.editTodo(event.currentTarget.value)
+      if (event.code === "Enter") {
+        this.editTodo(event.currentTarget.value);
       }
     },
-    ...mapActions(['setSelectedTodo', 'editTodo', 'removeTodo'])
+    ...mapActions(["setSelectedTodo", "editTodo", "removeTodo"]),
   },
   computed: {
-    ...mapGetters(['getFilteredTodos']),
-    ...mapState(['selectedTodo'])
-  }
-}
+    ...mapGetters(["getFilteredTodos"]),
+    ...mapState(["selectedTodo"]),
+  },
+};
 </script>
 
 <style></style>
