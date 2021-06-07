@@ -2,7 +2,7 @@
   <div class="nav">
     <div class="nav-Logo">Vue Exam</div>
     <div class="nav-Content">
-      <router-link to="/">ToDoList</router-link> | 
+      <router-link to="/">ToDoList</router-link> |
       <router-link to="/intro">IntroDuce</router-link>
     </div>
     <router-view />
@@ -10,6 +10,10 @@
 </template>
 
 <style lang="scss">
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+* {
+  font-family: "Nanum Gothic", sans-serif;
+}
 /* .nav {
   width: 100vw;
   height: 60px;
