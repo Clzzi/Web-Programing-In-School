@@ -35,15 +35,14 @@
 
 <style scoped lang="scss">
 .Intro {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 80px;
+  display: inline-block;
+  width: 840px;
+  height: 540px;
   justify-content: center;
   text-align: center;
   align-items: center;
   vertical-align: middle;
-
   &-MainImgWrap {
     display: inline-block;
     margin-bottom: 10px;

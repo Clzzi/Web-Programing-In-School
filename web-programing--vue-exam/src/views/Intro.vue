@@ -14,3 +14,13 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.intro {
+  width: 100vw;
+  height: 100vh;
+  min-width: 1920px;
+  max-width: 1920px;
+}
+
+</style>
