@@ -38,6 +38,7 @@ export default {
   width: 600px;
   height: 60px;
   padding: 0px 6px 0px 6px;
+  margin-bottom: 10px;
   &-TodoInput {
     width: 100%;
     height: 100%;
