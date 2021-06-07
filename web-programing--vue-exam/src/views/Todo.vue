@@ -1,5 +1,5 @@
 <template>
-  <div class="todo">
+  <div class="Todo">
     <TodoTitle />
     <TodoHeader />
     <TodoInput />
@@ -24,5 +24,14 @@ export default {
 </script>
 
 <style lang="scss">
-
+  .Todo {
+    display: inline-block;
+    width: 600px;
+    height: 600px;
+    min-width: 600px;
+    min-height: 600px;
+    background-color: #bac8ff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
 </style>

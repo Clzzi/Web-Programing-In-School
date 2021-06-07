@@ -17,6 +17,7 @@ export default {};
 <style lang="scss">
 .nav {
   width: 100%;
+  min-width: 1440px;
   height: 73px;
   display: inline-block;
   padding: 0px 30px 0px 30px;
@@ -24,6 +25,7 @@ export default {};
   justify-content: center;
   line-height: 65px;
   background-color: #a5d8ff;
+  margin-bottom: 30px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   &-Logo {
     font-size: 2rem;

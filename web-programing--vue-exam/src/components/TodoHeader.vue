@@ -1,14 +1,25 @@
 <template>
-  <div>
-    <select name="all" @change="onChange(onChange($event))">
+  <div class="TodoHeader">
+    <select
+      name="all"
+      @change="onChange(onChange($event))"
+      class="TodoHeader-SelectBox"
+    >
       <option value="all">All</option>
       <option value="active">Active</option>
       <option value="done">Done</option>
     </select>
-    <button type="button" @click="removeCompletedTodo" v-show="completedCount">
+    <button type="button" @click="clearAll" class="TodoHeader-ClearAll">
+      Clear All
+    </button>
+    <button
+      type="button"
+      @click="removeCompletedTodo"
+      v-show="completedCount"
+      class="TodoHeader-ClearDone"
+    >
       Clear Done
     </button>
-    <button type="button" @click="clearAll">Clear All</button>
   </div>
 </template>
 
@@ -28,4 +39,46 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss">
+.TodoHeader {
+  padding: 0px 6px 0px 6px;
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+  text-align: start;
+  &-SelectBox {
+    float: left;
+    width: 100px;
+    text-align-last: center;
+    text-align: center;
+    -ms-text-align-last: center;
+    -moz-text-align-last: center;
+    outline: none;
+  }
+  &-ClearDone {
+    float: right;
+    height: 100%;
+    border: none;
+    padding: 0px 5px 0px 5px;
+    border-radius: 5px;
+    background-color: #748ffc;
+    border: 2px solid white;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  &-ClearAll {
+    float: right;
+    height: 100%;
+    border: none;
+    padding: 0px 5px 0px 5px;
+    border-radius: 5px;
+    background-color: #748ffc;
+    border: 2px solid white;
+    color: white;
+    outline: none;
+    cursor: pointer;
+  }
+}
+</style>
