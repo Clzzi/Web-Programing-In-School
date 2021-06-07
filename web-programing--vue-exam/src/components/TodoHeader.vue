@@ -46,6 +46,8 @@ export default {
   width: 100%;
   height: 30px;
   text-align: start;
+  vertical-align: middle;
+  margin-bottom: 15px;
   &-SelectBox {
     float: left;
     width: 100px;
@@ -56,6 +58,7 @@ export default {
     outline: none;
   }
   &-ClearDone {
+    transition: 0.3s;
     float: right;
     height: 100%;
     border: none;
@@ -68,7 +71,11 @@ export default {
     cursor: pointer;
     margin-right: 5px;
   }
+  &-ClearDone:hover {
+    background-color: #4c6ef5;
+  }
   &-ClearAll {
+    transition: 0.3s;
     float: right;
     height: 100%;
     border: none;
@@ -79,6 +86,9 @@ export default {
     color: white;
     outline: none;
     cursor: pointer;
+  }
+  &-ClearAll:hover {
+    background-color: #4c6ef5;
   }
 }
 </style>
