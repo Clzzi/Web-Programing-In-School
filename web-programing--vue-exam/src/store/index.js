@@ -33,6 +33,9 @@ export default new Vuex.Store({
     SET_EDIT_TODO(state, todo) {
       state.selectedTodo = todo;
     },
+    CLEAR_ALL(state) {
+      state.todos = [];
+    },
   },
   actions: {
     createTodo({ commit }, text) {
@@ -56,6 +59,9 @@ export default new Vuex.Store({
     },
     setSelectedTodo({ commit }, todo) {
       commit("SET_EDIT_TODO", todo);
+    },
+    clearAll({ commit }) {
+      commit("CLEAR_ALL");
     },
   },
   getters: {

@@ -6,8 +6,9 @@
       <option value="done">Done</option>
     </select>
     <button type="button" @click="removeCompletedTodo" v-show="completedCount">
-      Clear completed
+      Clear Done
     </button>
+    <button type="button" @click="clearAll">Clear All</button>
   </div>
 </template>
 
@@ -16,7 +17,7 @@ import { mapActions, mapGetters } from "vuex";
 export default {
   name: "TodoFooter",
   methods: {
-    ...mapActions(["updateVisibility", "removeCompletedTodo"]),
+    ...mapActions(["updateVisibility", "removeCompletedTodo", "clearAll"]),
     onChange(e) {
       this.updateVisibility(e.target.value);
     },

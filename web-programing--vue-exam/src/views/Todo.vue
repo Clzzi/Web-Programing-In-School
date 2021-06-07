@@ -1,22 +1,22 @@
 <template>
   <div class="todo">
     <h1>Todo App</h1>
+    <TodoHeader />
     <TodoInput />
     <TodoList />
-    <TodoFooter />
   </div>
 </template>
 
 <script>
 import TodoInput from "@/components/TodoInput";
 import TodoList from "@/components/TodoList";
-import TodoFooter from "@/components/TodoFooter";
+import TodoHeader from "@/components/TodoHeader";
 export default {
   name: "Todo",
   components: {
     TodoInput,
     TodoList,
-    TodoFooter,
+    TodoHeader,
   },
 };
 </script>
