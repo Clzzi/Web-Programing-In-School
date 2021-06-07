@@ -1,12 +1,37 @@
 <template>
-  <ul class="TodoList">
-    <li class="TodoList-Item">
-      <input type="checkbox" id="list-item-1" />
-      <label for="list-item-1">
-        <p class="list-text">hi</p>
-      </label>
-      <p class="list-data">5/26</p>
-      <button class="list-delete">Delete</button>
-    </li>
-  </ul>
+  <div>
+    <ul>
+      <li v-for="todo in getFilteredTodos" :key="todo.id">
+        <input type="checkbox" v-model="todo.completed" />
+        <span @dblclick="setSelectedTodo(todo)">{{ todo.text }}</span>
+        <button type="button" @click="removeTodo(todo.id)">delete</button>
+        <input
+          type="text"
+          @keyup="updateEditTodo"
+          v-show="selectedTodo && todo.id === selectedTodo.id"
+        />
+      </li>
+    </ul>
+  </div>
 </template>
+
+<script>
+import { mapGetters, mapActions, mapState } from 'vuex'
+export default {
+  name: 'TodoList',
+  methods: {
+    updateEditTodo(event) {
+      if (event.code === 'Enter') {
+        this.editTodo(event.currentTarget.value)
+      }
+    },
+    ...mapActions(['setSelectedTodo', 'editTodo', 'removeTodo'])
+  },
+  computed: {
+    ...mapGetters(['getFilteredTodos']),
+    ...mapState(['selectedTodo'])
+  }
+}
+</script>
+
+<style></style>

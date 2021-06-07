@@ -1,31 +1,31 @@
 <template>
   <div class="todo">
-    <TodoHeader />
-    <TodoTitle />
+    <h1>Todo App</h1>
     <TodoInput />
-    <TodoController />
     <TodoList />
     <TodoFooter />
   </div>
 </template>
 
 <script>
-import TodoHeader from "../components/TodoHeader";
-import TodoTitle from "../components/TodoTitle";
-import TodoInput from "../components/TodoInput";
-import TodoList from "../components/TodoList";
-import TodoController from "../components/TodoController";
-import TodoFooter from "../components/TodoFooter";
-
+import TodoInput from "@/components/TodoInput";
+import TodoList from "@/components/TodoList";
+import TodoFooter from "@/components/TodoFooter";
 export default {
-  name: "ToDoList",
+  name: "Todo",
   components: {
-    TodoHeader,
-    TodoTitle,
     TodoInput,
-    TodoController,
     TodoList,
     TodoFooter,
   },
 };
 </script>
+
+<style lang="scss">
+.todo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
