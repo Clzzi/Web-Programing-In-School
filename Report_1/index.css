@@ -1,0 +1,74 @@
+.Main {
+  min-width: 100vw;
+  max-width: 100vw;
+  height: 100%;
+  width: 100vw;
+}
+
+.Profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.Profile-Image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.Profile-Name {
+  font-size: 1.7rem;
+  font-weight: bolder;
+  padding-top: 30px;
+}
+
+table {
+  width: 800px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+th,
+td {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-align: center;
+}
+
+thead > th {
+  background-color: #55608f;
+}
+
+tbody > td {
+  position: relative;
+}
+
+tbody > tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+tbody > td:hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+.Content {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
